@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px) {
+  /*Top Image Styles*/
+  body::before {
+    background-position: top right;
+    background-size: auto 80%;
+  }
+
+  /*Bottom Image styles*/
+  body::after {
+    content: "";
+    background-image: url(../../images/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  /*Container*/
+  .pricing-page {
+    padding: 0;
+  }
+
+  /*Pricing box layout*/
+  #changePlanType {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*Toggle to switch between Monthly and Annual Prices */
+  .pricing-type-toggle {
+    margin-bottom: 2rem;
+  }
+
+  /*styles for the pricing plan boxes*/
+  .pricing-plan {
+    margin-top: 0;
+  }
+
+  /*Professional pricing plan styles*/
+  .professional {
+    padding: 3rem 1.5rem;
+  }
+}/*# sourceMappingURL=media.css.map */

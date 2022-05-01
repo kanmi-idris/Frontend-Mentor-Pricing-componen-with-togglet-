@@ -1,0 +1,146 @@
+:root {
+    // ### Primary
+    --Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+    // ### Neutral
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+    --White: white;
+    --Blue: hsl(237, 63%, 64%);
+    --Font-size: 15px;
+    // ### FontWeight
+    --Weight: 700;
+}
+/*Style to edit the page heading*/ 
+.pricing-page-label {
+    font-size: 30px;
+    margin-block: 2.5rem;
+    color: var(--Grayish-Blue);
+}
+
+/*Toggle to switch between Monthly and Annual Prices */
+.pricing-type-toggle {
+    display: flex;
+    align-items: center;
+    color: var(--Light-Grayish-Blue);
+    margin-bottom: 2.5rem;
+/*styles for the toggleButton background*/ 
+    label {
+        background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+        border-radius: 50px;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 10px;
+        position: relative;
+        height: 30px;
+        width: 60px;
+        /*styles for the white ball to toggle between monthly and annual prices*/ 
+        .ball {
+            background-color: var(--White);
+            border-radius: 50%;
+            position: absolute;
+            top: 2.5px;
+            left: 2.5px;
+            height: 25px;
+            width: 25px;
+            transition: transform .4s;
+        }
+    }
+    /*Styles to hide the checkbox icon*/ 
+    input {
+        position: absolute;
+        left: -9999px;
+    }
+    /*Styles to make the white ball in the 
+    toggle button move to the side when clicked*/ 
+    input:checked+label .ball {
+        transform: translateX(30px);
+    }
+}
+
+/*styles for the pricing plan boxes*/
+.pricing-plan {
+    width: 100%;
+    background-color: var(--White);
+    border-radius: 10px;
+    margin-block: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: var(--Dark-Grayish-Blue);
+}
+
+/*styles for the label of each pricing plan*/
+.pricing-plan-label {
+    font-weight: var(--Weight);
+    font-size: 20px;
+}
+
+/*Styles for Each Plan*/
+.price {
+    font-size: 65px;
+    margin-block: 2rem;
+}
+
+/*Styles to toggle the monthly plan*/
+.monthly {
+    display: none;
+}
+
+/*Styles to allow the javaScript toggle the monthly plan*/
+.show-monthly .monthly {
+    display: block;
+}
+
+/*Styles to allow the javaScript toggle the annual plan*/
+.show-monthly .annually {
+    display: none;
+}
+
+/*Styles for the benefits of each plan*/
+.pricing-benefits-text {
+    padding-block: 1rem;
+    border-top: 1px solid var(--Light-Grayish-Blue);
+}
+
+/*Styles for the last benefit of each plan*/
+.last {
+    border-bottom: 1px solid var(--Light-Grayish-Blue);
+}
+
+/*Styles for the button of each plan*/
+.pricing-benefits button {
+    color: var(--White);
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    outline: 0;
+    border: 0;
+    text-transform: uppercase;
+    padding-block: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+/*Styles for the Professional plan*/
+.professional {
+    color: var(--White);
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
+    /*Styles for the benefits of each plan*/
+    .pricing-benefits-text {
+        border-top: 1px solid var(--White);
+    }
+
+    /*Styles for the last benefit of each plan*/
+    .last {
+        border-bottom: 1px solid var(--White);
+    }
+
+    /*Styles for the button of each plan*/
+    button {
+        color: var(--Blue);
+        background: var(--White);
+    }
+
+
+}

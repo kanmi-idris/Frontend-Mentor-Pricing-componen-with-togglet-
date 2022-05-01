@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/app.css">
+  <title>Frontend Mentor | [Pricing Component With Toggle]</title>
+</head>
+
+<body>
+  <main class="pricing-page">
+    <h2 class="pricing-page-label">Our Pricing</h2>
+    <div class="pricing-type-toggle">
+      <span>Annually</span>
+      <input type="checkbox" name="toggle" id="toggle" unchecked />
+      <label for="toggle">
+        <div class="ball"></div>
+      </label>
+      <span>Monthly</span>
+    </div>
+
+    <div id="changePlanType">
+      <section class="pricing-plan">
+        <p class="pricing-plan-label">Basic</p>
+        <h1 class="price annually">&dollar;199.99</h1>
+        <h1 class="price monthly">&dollar;19.99</h1>
+        <div class="pricing-benefits">
+          <p class="pricing-benefits-text">500 GB Storage</p>
+          <p class="pricing-benefits-text">2 Users Allowed</p>
+          <p class="pricing-benefits-text last">Send up to 3 GB</p>
+          <button>Learn More</button>
+        </div>
+      </section>
+
+      <section class="pricing-plan professional">
+        <p class="pricing-plan-label">Professional</p>
+        <h1 class="price annually">&dollar;249.99</h1>
+        <h1 class="price monthly">&dollar;24.99</h1>
+        <div class="pricing-benefits">
+          <p class="pricing-benefits-text">1 TB Storage</p>
+          <p class="pricing-benefits-text">5 Users Allowed</p>
+          <p class="pricing-benefits-text last">Send up to 10 GB</p>
+          <button>Learn More</button>
+        </div>
+      </section>
+
+      <section class="pricing-plan">
+        <p class="pricing-plan-label">Master</p>
+        <h1 class="price annually">&dollar;399.99</h1>
+        <h1 class="price monthly">&dollar;39.99</h1>
+        <div class="pricing-benefits">
+          <p class="pricing-benefits-text">2 TB Storage</p>
+          <p class="pricing-benefits-text">10 Users Allowed</p>
+          <p class="pricing-benefits-text last">Send up to 20 GB</p>
+          <button>Learn More</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Primus</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

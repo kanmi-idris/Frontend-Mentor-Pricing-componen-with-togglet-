@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+:root {
+  --Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+  --White: white;
+  --Blue: hsl(237, 63%, 64%);
+  --Font-size: 15px;
+  --Weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--Very-Light-Grayish-Blue);
+  color: var(--Dark-Grayish-Blue);
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Top Image styles*/
+body::before {
+  content: "";
+  background-image: url(../../images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position-x: 307%;
+  background-position-y: -20%;
+  background-size: 80%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+/*Container Styles*/
+.pricing-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+/*Footer styles*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=base.css.map */
